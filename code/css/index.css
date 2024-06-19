@@ -1,0 +1,181 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    background-color: black;
+    color: #fff;
+    border: 1px solid #333;
+    align-items: center;
+    width: 0 auto;
+    margin: 0 auto;
+    margin-top: 220px;
+    
+
+  }
+  body{
+    background-image: url("./img/fundoss.png");
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o fundo */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+}
+  
+  .form:hover {
+    transform: scale(1.05);
+    border: 1px solid black;
+  }
+  
+  .title {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    color: #fcfcfc;
+  }
+  
+  .title::before {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+  }
+  
+  .title::before,
+  .title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: #f9feff;
+  }
+  
+  .field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    border-radius: 25px;
+    padding: 0.6em;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #3b3838;
+    box-shadow: inset 2px 5px 10px rgb(0, 0, 0);
+  }
+  
+  .input-icon {
+    height: 1.3em;
+    width: 1.3em;
+    fill: white;
+  }
+  
+  .input-field {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #d3d3d3;
+  }
+  
+  .submit {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    transform: .3s ease;
+    background-color: #ffffff;
+  }
+  
+  .submit:hover {
+    background-color: #00bfff96;
+  }
+  .logins{
+    color: white;
+    
+  }
+  .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  footer{
+    text-align: center; /*centraliza o texto */
+    color: black; /* define a cor do texto */
+    align-items: center;
+    justify-items: center;
+    text-justify: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+
+ }
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+  
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
+  @media only screen and (max-width: 767px) { /*se tamanho da tela menor que 767 px torna aplicação para mobile*/
+    .produtos-container {
+      display: flex; /*define layout para flex*/
+      flex-direction: column; /*altera a direção flex para coluna*/
+      align-items: center;  /*centraliza os itens*/
+    }
+  
+    .produto-card {
+      width: 90%; /*define a largura*/
+      margin-bottom: 20px; /*adiciona margem na parte inferior */
+    }
+  
+  
+    .produto-card img {
+      max-width: 100%; /*define a largura maxima para as imagens*/
+    }
+  
+  
+    .btn-container {
+      margin-top: 10px; /*adiciona margem na parte superior*/
+    }
+  
+  
+    h1 {
+      text-align: center; /*centraliza o texto*/
+    }
+  
+  
+    #carrinho {
+      margin-top: 10px; /* adiciona margem na parte superior*/
+    }
+  
+  
+    #carrinho h2 {
+      margin-bottom: 5px; /*adiciona margem na parte inferior */
+    }
+  
+  
+    #lista-carrinho {
+      padding-left: 0; /*define o preenchimento para a esquerda*/
+    }
+  }

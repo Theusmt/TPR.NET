@@ -1,0 +1,132 @@
+body{
+  background-image: url("./img/fundoss.png");
+  background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o fundo */
+  background-repeat: no-repeat; /* Evita repetição da imagem */
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    background-color: #000000;
+    color: #fff;
+    border: 1px solid #333;
+    align-items: center;
+    width: 0 auto;
+    margin: 0 auto;
+    margin-top: 220px;
+    
+  }
+  .form:hover {
+    transform: scale(1.05);
+    border: 1px solid black;
+  }
+  #criar {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    transform: .3s ease;
+    background-color: #ffffff;
+    
+  }
+  
+  #criar:hover {
+    background-color: #00bfff96;
+  }
+  .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #btn2{
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    transform: .3s ease;
+    background-color: #ffffff;
+  }
+  #btn2:hover{
+     background-color: #00bfff96;
+  }
+  .signin {
+    font-size: 14.5px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .signin {
+    text-align: center;
+  }
+  
+  .signin a:hover {
+    text-decoration: underline royalblue;
+  }
+  
+  .signin a {
+    color: #642283;
+  }
+  footer{
+    text-align: center; /*centraliza o texto */
+    color: black; /* define a cor do texto */
+    align-items: center;
+    justify-items: center;
+    text-justify: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+ }
+ @media only screen and (max-width: 767px) { /*se tamanho da tela menor que 767 px torna aplicação para mobile*/
+  .produtos-container {
+    display: flex; /*define layout para flex*/
+    flex-direction: column; /*altera a direção flex para coluna*/
+    align-items: center;  /*centraliza os itens*/
+  }
+
+  .produto-card {
+    width: 90%; /*define a largura*/
+    margin-bottom: 20px; /*adiciona margem na parte inferior */
+  }
+
+
+  .produto-card img {
+    max-width: 100%; /*define a largura maxima para as imagens*/
+  }
+
+
+  .btn-container {
+    margin-top: 10px; /*adiciona margem na parte superior*/
+  }
+
+
+  h1 {
+    text-align: center; /*centraliza o texto*/
+  }
+
+
+  #carrinho {
+    margin-top: 10px; /* adiciona margem na parte superior*/
+  }
+
+
+  #carrinho h2 {
+    margin-bottom: 5px; /*adiciona margem na parte inferior */
+  }
+
+
+  #lista-carrinho {
+    padding-left: 0; /*define o preenchimento para a esquerda*/
+  }
+ }
+  
+  

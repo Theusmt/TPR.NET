@@ -1,0 +1,140 @@
+body {
+  background-image: url("./img/fundoss.png");
+  background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o fundo */
+  background-repeat: repeat; /* Permite a repetição da imagem */
+  height: 100vh;
+  width: 100vw;
+}
+
+.card {
+  height: 350px;
+}
+
+nav {
+  background-color: #333;
+  position: absolute;
+  width: 100%; /* Garante que o nav ocupe toda a largura */
+  z-index: 1; /* Mantém o nav acima de outros elementos */
+}
+
+.card-text {
+  height: 150px;
+  overflow-y: auto;
+}
+
+.card-title {
+  height: 80px;
+  overflow-y: auto;
+}
+
+footer {
+  text-align: center; /* Centraliza o texto */
+  color: black; /* Define a cor do texto */
+  align-items: center;
+  justify-items: center;
+  text-justify: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Estilo para o conteúdo da página */
+.produtos-container {
+  display: flex; /* Define layout para flex */
+  flex-direction: column; /* Altera a direção flex para coluna */
+  align-items: center; /* Centraliza os itens */
+}
+
+/* Responsividade */
+@media only screen and (max-width: 767px) { /* Se tamanho da tela menor que 767 px, torna aplicação para mobile */
+  .produtos-container {
+    display: flex; /* Define layout para flex */
+    flex-direction: column; /* Altera a direção flex para coluna */
+    align-items: center; /* Centraliza os itens */
+  }
+
+  .produto-card {
+    width: 90%; /* Define a largura */
+    margin-bottom: 20px; /* Adiciona margem na parte inferior */
+  }
+
+  .produto-card img {
+    max-width: 100%; /* Define a largura máxima para as imagens */
+  }
+
+  .btn-container {
+    margin-top: 10px; /* Adiciona margem na parte superior */
+  }
+
+  h1 {
+    text-align: center; /* Centraliza o texto */
+  }
+
+  #carrinho {
+    margin-top: 10px; /* Adiciona margem na parte superior */
+  }
+
+  #carrinho h2 {
+    margin-bottom: 5px; /* Adiciona margem na parte inferior */
+  }
+
+  #lista-carrinho {
+    padding-left: 0; /* Define o preenchimento para a esquerda */
+  }
+
+  /* Ajustes adicionais para tabelas em dispositivos móveis */
+  table {
+    width: 100%; /* Tabelas ocupam toda a largura */
+    overflow-x: auto; /* Adiciona rolagem horizontal se necessário */
+    display: block;
+  }
+
+  th, td {
+    display: block; /* Cada célula será exibida como bloco */
+    width: 100%; /* Células ocupam toda a largura */
+    box-sizing: border-box; /* Inclui bordas e preenchimento no tamanho */
+  }
+
+  th {
+    background-color: #333; /* Cor de fundo para os cabeçalhos */
+    color: white; /* Cor do texto dos cabeçalhos */
+  }
+
+  td {
+    border-bottom: 1px solid #ddd; /* Adiciona uma borda inferior */
+  }
+
+  .navbar-brand, .nav-item {
+    width: 100%; /* Ocupa toda a largura */
+    text-align: center; /* Centraliza o texto */
+  }
+
+  .navbar-toggler {
+    margin-left: auto; /* Move o botão para a direita */
+  }
+
+  .navbar-collapse {
+    width: 100%; /* Ocupa toda a largura */
+    text-align: center; /* Centraliza o texto */
+  }
+}
+
+/* Ajustes para telas maiores */
+@media (min-width: 768px) {
+  .navbar-brand, .nav-item {
+    width: auto; /* Define largura automática para telas maiores */
+  }
+
+  .navbar-toggler {
+    margin-left: 0; /* Remove margem esquerda */
+  }
+
+  .navbar-collapse {
+    width: auto; /* Define largura automática para telas maiores */
+  }
+}

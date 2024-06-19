@@ -1,0 +1,239 @@
+/* Define a cor de fundo do corpo da página */
+body{
+    background-image: url("./img/fundoss.png");
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o fundo */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+}
+
+/* Estilo para o formulário */
+.form {
+  display: flex; /* Define layout flexível */
+  flex-direction: column; /* Direção dos itens em coluna */
+  gap: 10px; /* Espaçamento entre os itens */
+  max-width: 350px; /* Largura máxima do formulário */
+  padding: 20px; /* Espaçamento interno */
+  border-radius: 20px; /* Borda arredondada */
+  position: relative; /* Posição relativa para posicionamento interno */
+  background-color: #000000; /* Cor de fundo preta */
+  color: #fff; /* Cor do texto branca */
+  border: 1px solid #333; /* Borda com cor #333 */
+  align-items: center; /* Alinhamento dos itens ao centro */
+  width: 0 auto; /* Largura automática */
+  margin: 0 auto; /* Centraliza o formulário horizontalmente */
+  margin-top: 220px; /* Espaçamento superior */
+}
+
+/* Efeito de hover no formulário */
+.form:hover {
+  transform: scale(1.05); /* Aumenta o tamanho em 5% */
+  border: 1px solid black; /* Muda a cor da borda para preto */
+}
+
+/* Estilo para o título do formulário */
+.title {
+  font-size: 28px; /* Tamanho da fonte */
+  font-weight: 600; /* Espessura da fonte */
+  letter-spacing: -1px; /* Espaçamento entre letras */
+  position: relative; /* Posição relativa para posicionamento interno */
+  display: flex; /* Define layout flexível */
+  align-items: center; /* Alinhamento dos itens ao centro */
+  padding-left: 30px; /* Espaçamento interno à esquerda */
+  color: #fcfcfc; /* Cor do texto */
+}
+
+/* Estilo antes do título */
+.title::before {
+  width: 18px;  
+  height: 18px;
+}
+
+/* Estilo depois do título */
+.title::after {
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite; /* Animação pulsante */
+}
+
+/* Estilo para os elementos antes e depois do título */
+.title::before,
+.title::after {
+  position: absolute; /* Posição absoluta para posicionamento preciso */
+  content: ""; /* Conteúdo vazio */
+  height: 16px;
+  width: 16px;
+  border-radius: 50%; /* Borda arredondada (círculo) */
+  left: 0px; /* Alinhamento à esquerda */
+  background-color: #f9feff; /* Cor de fundo */
+}
+
+/* Estilo para mensagens e links de login */
+.message, 
+.signin {
+  font-size: 14.5px; /* Tamanho da fonte */
+  color: rgba(255, 255, 255, 0.7); /* Cor do texto com opacidade */
+}
+
+/* Estilo para a seção de login */
+.signin {
+  text-align: center; /* Alinhamento do texto ao centro */
+}
+
+/* Efeito de hover no link de login */
+.signin a:hover {
+  text-decoration: underline royalblue; /* Sublinhado azul royal */
+}
+
+/* Estilo para o link de login */
+.signin a {
+  color: #642283; /* Cor do link */
+}
+
+/* Estilo para elementos flexíveis */
+.flex {
+  display: flex; /* Define layout flexível */
+  width: 100%; /* Largura total */
+  gap: 6px; /* Espaçamento entre itens */
+  align-items: center; /* Alinhamento dos itens ao centro */
+  margin: 0 auto; /* Centraliza os itens horizontalmente */
+  justify-content: center; /* Justifica ao centro */
+}
+
+/* Estilo para os rótulos do formulário */
+.form label {
+  position: relative; /* Posição relativa para posicionamento interno */
+}
+
+/* Estilo para o rodapé */
+footer {
+  text-align: center; /* Centraliza o texto */
+  color: black; /* Define a cor do texto */
+  align-items: center; /* Alinhamento dos itens ao centro */
+  justify-items: center; /* Justificação dos itens */
+  text-justify: center; /* Justificação do texto */
+  position: fixed; /* Fixa o rodapé na parte inferior */
+  bottom: 0; /* Alinhamento ao fundo */
+  left: 0; /* Alinhamento à esquerda */
+  width: 100%; /* Largura total */
+  background-color: #333; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  text-align: center; /* Alinhamento do texto ao centro */
+  padding: 10px 0; /* Espaçamento interno vertical */
+}
+
+/* Estilo para os campos de entrada no formulário */
+.form label .input {
+  display: flex; /* Define layout flexível */
+  align-items: center; /* Alinhamento dos itens ao centro */
+  justify-content: center; /* Justificação ao centro */
+  gap: 0.5em; /* Espaçamento entre itens */
+  border-radius: 25px; /* Borda arredondada */
+  padding: 0.6em; /* Espaçamento interno */
+  border: none; /* Sem borda */
+  outline: none; /* Sem contorno */
+  color: white; /* Cor do texto */
+  background-color: #3b3838; /* Cor de fundo */
+  box-shadow: inset 2px 5px 10px rgb(0, 0, 0); /* Sombra interna */
+}
+
+/* Estilo para o rótulo dos campos de entrada */
+.form label .input + span {
+  color: rgba(255, 255, 255, 0.5); /* Cor do texto com opacidade */
+  position: absolute; /* Posição absoluta para posicionamento preciso */
+  left: 10px; /* Alinhamento à esquerda */
+  top: 0px; /* Alinhamento ao topo */
+  font-size: 0.9em; /* Tamanho da fonte */
+  cursor: text; /* Cursor de texto */
+  transition: 0.3s ease; /* Transição suave */
+}
+
+/* Estilo para o placeholder dos campos de entrada */
+.form label .input:placeholder-shown + span {
+  top: 12.5px; /* Alinhamento ao topo */
+  font-size: 0.9em; /* Tamanho da fonte */
+}
+
+/* Estilo para o rótulo dos campos de entrada quando focados ou preenchidos */
+.form label .input:focus + span,
+.form label .input:valid + span {
+  color: white; /* Cor do texto */
+  top: 0px; /* Alinhamento ao topo */
+  font-size: 0.7em; /* Tamanho da fonte */
+  font-weight: 600; /* Espessura da fonte */
+}
+
+/* Estilo para o campo de entrada */
+.input {
+  font-size: medium; /* Tamanho da fonte */
+}
+
+/* Estilo para o botão de envio */
+.submit {
+  border: none; /* Sem borda */
+  outline: none; /* Sem contorno */
+  padding: 10px; /* Espaçamento interno */
+  border-radius: 10px; /* Borda arredondada */
+  font-size: 16px; /* Tamanho da fonte */
+  transform: .3s ease; /* Transição suave */
+  background-color: #ffffff; /* Cor de fundo */
+}
+
+/* Efeito de hover no botão de envio */
+.submit:hover {
+  background-color: #00bfff96; /* Cor de fundo ao passar o mouse */
+}
+
+/* Animação de pulsação */
+@keyframes pulse {
+  from {
+    transform: scale(0.9); /* Escala inicial */
+    opacity: 1; /* Opacidade inicial */
+  }
+  
+  to {
+    transform: scale(1.8); /* Escala final */
+    opacity: 0; /* Opacidade final */
+  }
+}
+
+/* Estilo responsivo para dispositivos móveis */
+@media only screen and (max-width: 767px) {
+  /* Estilo para o contêiner de produtos */
+  .produtos-container {
+    display: flex; /* Define layout flexível */
+    flex-direction: column; /* Direção dos itens em coluna */
+    align-items: center; /* Alinhamento dos itens ao centro */
+  }
+
+  /* Estilo para o cartão de produto */
+  .produto-card {
+    width: 90%; /* Largura do cartão */
+    margin-bottom: 20px; /* Espaçamento inferior */
+  }
+
+  /* Estilo para a imagem do cartão de produto */
+  .produto-card img {
+    max-width: 100%; /* Largura máxima da imagem */
+  }
+
+  /* Estilo para o contêiner de botões */
+  .btn-container {
+    margin-top: 10px; /* Espaçamento superior */
+  }
+
+  /* Estilo para o título */
+  h1 {
+    text-align: center; /* Alinhamento do texto ao centro */
+  }
+
+  /* Estilo para o carrinho */
+  #carrinho {
+    margin-top: 10px; /* Espaçamento superior */
+  }
+
+  /* Estilo para o título do carrinho */
+  #carrinho h2 {
+    margin-bottom: 5px; /* Espaçamento inferior */
+  }
+
+  /* Estilo para a lista do carrinho */
+}
